@@ -28,6 +28,8 @@ main{
                         "rules rules"
                         "places joinus";
     height: auto;
+    align-content: center;
+    
 
 }
 .title{
@@ -58,12 +60,23 @@ img{
 
 #about{
     grid-area: about;
+    align-self: center;
 }
 
 #images{
     grid-area: images;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
+#images img{
+    width: 30%;
+    min-width: 300px;
+    height: auto;
+    margin-bottom: 3%;
+}
 #rules{
     grid-area: rules;
 }
@@ -73,4 +86,8 @@ img{
 }
 #joinus{
     grid-area: joinus;
+}
+
+#rassicm{
+    text-decoration: solid 0.2rem line-through;
 }
