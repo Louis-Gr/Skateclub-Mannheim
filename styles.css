@@ -23,12 +23,10 @@ a{
 }
 main{
     display: grid;
-    grid-template-areas:"about rules"
-                        "images images"
-                        "places joinus";
+    grid-template-columns: repeat(12, 1fr);
     height: auto;
     align-content: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 .title{
     background-image: url("./images/lukas-bato-Vbbn4xNBfnM-unsplash.jpg");
@@ -58,17 +56,15 @@ img{
 }
 
 #about{
-    grid-area: about;
-    width: 50%;
+    grid-area: 1 / 4 / 5 / 7;
     
 }
 #rules{
-    grid-area: rules;
-    width: 50%;
+    grid-area: 1 / 7 / 5 / 11;
 }
 
 #images{
-    grid-area: images;
+    grid-area: 5 / 1 / 16 / 13;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -76,14 +72,20 @@ img{
 }
 
 #places{
-    grid-area: places;
-    width: 50%;
+    grid-area: 16 / 2 / 20 / 5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #joinus{
-    grid-area: joinus;
-    width: 50%;
+    grid-area: 16 / 6 / 20 / 13;
 }
+.form{
+    display:grid;
+    align-content: space-around;
+    width: 80%;
 
+}
 #images img{
     width: 30%;
     min-width: 300px;
@@ -101,4 +103,19 @@ h2{
 
 p{
     font-size: 1.75rem;
+}
+iframe{
+    width:100%;
+    height: 80%;
+    border:0;
+}
+#submit{
+    font-family: "Bangers";
+    width: 30%;
+    justify-self: center;
+}
+
+.terms{
+    justify-self: center;
+
 }

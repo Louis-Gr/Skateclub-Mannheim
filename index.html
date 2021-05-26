@@ -54,13 +54,14 @@
       </div>
       
       <div id="places">
+        <h2>Most Popular Spot</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.377029097685!2d8.470467915606145!3d49.4962736793551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cc2ed1403d13%3A0xb0211aeadcd1f55c!2sAlter%20Me%C3%9Fplatz%2C%20Mannheim!5e0!3m2!1sde!2sde!4v1621961549238!5m2!1sde!2sde"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        allowfullscreen="" loading="lazy"></iframe>
       </div>
       
       <div id="joinus">
         <h2>Join Us!</h2>
-        <form action="PULL">
+        <form action="PULL" class="form">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Max Mustermann"> <br>
           <label for="email">Email</label>
@@ -68,10 +69,11 @@
           <label for="subject">Betreff</label>
           <input type="text" name="subject" id="subject"> <br>
           <label for="message">Nachricht</label>
-          <input type="text" name="message" id="message"> <br>
-          <label for="terms">Ich akzeptiere die Verarbeitung meiner personenbezogenen Daten</label>
-          <input type="checkbox" name="terms" id="terms"> <br>
-          <input type="submit" value="Senden">
+          <textarea id="message" name="message" rows="5" cols="30">
+            </textarea> <br>
+          <label for="terms" class="terms">Ich akzeptiere die Verarbeitung meiner personenbezogenen Daten</label>
+          <input type="checkbox" name="terms" id="terms" class="terms"> <br>
+          <input type="submit" value="Senden" id="submit">
         </form>
       </div>
     </main>
