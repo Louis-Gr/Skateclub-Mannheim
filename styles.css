@@ -3,7 +3,7 @@ font-family: 'Bebas Neue', cursive;
 font-family: 'Oswald', sans-serif;
 font-family: 'ZCOOL KuaiLe', cursive; */
 
-body{
+html{
     font-family: "Bangers", "Bebas Neue", "Oswald";
     background-color: #000;
     color: #fff;
@@ -23,14 +23,12 @@ a{
 }
 main{
     display: grid;
-    grid-template-areas: "about about"
+    grid-template-areas:"about rules"
                         "images images"
-                        "rules rules"
                         "places joinus";
     height: auto;
     align-content: center;
-    
-
+    justify-content: space-around;
 }
 .title{
     background-image: url("./images/lukas-bato-Vbbn4xNBfnM-unsplash.jpg");
@@ -41,6 +39,7 @@ main{
     height: 600px;
     display: flex;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
 .title h1{
@@ -60,7 +59,12 @@ img{
 
 #about{
     grid-area: about;
-    align-self: center;
+    width: 50%;
+    
+}
+#rules{
+    grid-area: rules;
+    width: 50%;
 }
 
 #images{
@@ -71,23 +75,30 @@ img{
     
 }
 
+#places{
+    grid-area: places;
+    width: 50%;
+}
+#joinus{
+    grid-area: joinus;
+    width: 50%;
+}
+
 #images img{
     width: 30%;
     min-width: 300px;
     height: auto;
     margin-bottom: 3%;
 }
-#rules{
-    grid-area: rules;
-}
-
-#places{
-    grid-area: places;
-}
-#joinus{
-    grid-area: joinus;
-}
 
 #rassicm{
     text-decoration: solid 0.2rem line-through;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.75rem;
 }
